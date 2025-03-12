@@ -1,4 +1,7 @@
 using UnityEngine;
+#if Unity_Editor
+using UnityEditor;
+#endif
 
 public class GameManager : SingletonMonoBehavior<GameManager>
 {
@@ -67,10 +70,10 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     public void QuitGame()
     {
-# if Unity_Editor
+#if Unity_Editor
         EditorApplication.isPlaying = false;
-# else
+#else
         Application.Quit();
-# endif
+#endif
     }
 }
