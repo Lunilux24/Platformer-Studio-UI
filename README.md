@@ -1,6 +1,6 @@
 # Third Person Platformer
 
-A simple third person character controller in Unity
+A simple third person character controller in Unity. Exit button doesn't seem to work in editor.
 
 ## Demo
 Video_Demonstration.mp4
